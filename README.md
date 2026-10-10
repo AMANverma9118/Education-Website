@@ -142,8 +142,8 @@ npm run dev     # http://localhost:5173
 | `CLIENT_URL` | `https://your-app.vercel.app` (no trailing slash) |
 | `COOKIE_SECURE` | `true` |
 | `RECAPTCHA_SECRET_KEY` | from Google reCAPTCHA admin |
-| `PRINCIPAL_EMAIL` | `principal@greenfield.edu` |
-| `PRINCIPAL_PASSWORD` | `PrincipalDemo1` (change for real schools) |
+| `PRINCIPAL_EMAIL` | `aman@gmail.com` |
+| `PRINCIPAL_PASSWORD` | `12345678` (change for real schools) |
 | `PRINCIPAL_FIRST_NAME` | `Maya` |
 | `PRINCIPAL_LAST_NAME` | `Okoro` |
 

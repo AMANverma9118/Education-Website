@@ -18,7 +18,7 @@ async function start() {
   const app = express();
   const allowedOrigins = env.clientUrl
     .split(',')
-    .map((u) => u.trim())
+    .map((u) => u.trim().replace(/\/$/, ''))
     .filter(Boolean);
 
   app.set('trust proxy', 1);
