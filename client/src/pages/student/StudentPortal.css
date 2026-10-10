@@ -1,0 +1,98 @@
+.portal--student .student-hero {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(154, 122, 61, 0.28);
+}
+
+.student-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) 1fr;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.student-pass {
+  padding: 1.35rem 1.2rem;
+  background: linear-gradient(165deg, #10241e 0%, #0c1612 100%);
+  color: var(--chalk);
+  border: 1px solid rgba(224, 197, 122, 0.35);
+}
+
+.student-pass__label {
+  font-size: 0.68rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 0.65rem;
+}
+
+.student-pass__hint {
+  font-size: 0.88rem;
+  color: rgba(248, 244, 236, 0.72);
+  line-height: 1.45;
+  margin-bottom: 1.1rem;
+}
+
+.student-pass__email {
+  font-size: 0.82rem;
+  word-break: break-all;
+  color: rgba(248, 244, 236, 0.78);
+  margin-bottom: 0.55rem;
+}
+
+.student-pass__code {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  letter-spacing: 0.14em;
+  color: var(--gold);
+  margin-bottom: 1rem;
+}
+
+.student-pass__copy {
+  width: 100%;
+  border: 1px solid rgba(224, 197, 122, 0.55);
+  background: transparent;
+  color: var(--chalk);
+  padding: 0.65rem 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.student-pass__copy:hover {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.student-pass__note {
+  margin-top: 0.85rem;
+  font-size: 0.8rem;
+  color: rgba(248, 244, 236, 0.55);
+  line-height: 1.4;
+}
+
+.student-stats .stat {
+  background: #fbf8f0;
+  border-color: rgba(196, 163, 90, 0.28);
+}
+
+.student-stats .stat__value {
+  color: var(--clay-deep);
+}
+
+.student-quick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 860px) {
+  .student-layout {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,65 @@
+.form-done {
+  text-align: center;
+  padding: 2.25rem 1.5rem;
+  border-color: rgba(196, 163, 90, 0.35);
+  background:
+    radial-gradient(ellipse at 50% 0%, rgba(224, 197, 122, 0.14), transparent 55%),
+    rgba(248, 244, 236, 0.95);
+  animation: form-done-in 0.4s var(--ease) both;
+}
+
+.form-done__mark {
+  width: 42px;
+  height: 42px;
+  margin: 0 auto 1rem;
+  border: 1px solid var(--clay);
+  border-radius: 50%;
+  position: relative;
+}
+
+.form-done__mark::after {
+  content: '';
+  position: absolute;
+  left: 14px;
+  top: 10px;
+  width: 10px;
+  height: 16px;
+  border-right: 2px solid var(--field-deep);
+  border-bottom: 2px solid var(--field-deep);
+  transform: rotate(40deg);
+}
+
+.form-done__eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--clay-deep);
+  margin-bottom: 0.45rem;
+}
+
+.form-done__title {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  margin-bottom: 0.45rem;
+  color: var(--ink);
+}
+
+.form-done__msg {
+  color: var(--muted);
+  font-size: 0.95rem;
+  max-width: 36ch;
+  margin: 0 auto 1.25rem;
+  line-height: 1.5;
+}
+
+@keyframes form-done-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

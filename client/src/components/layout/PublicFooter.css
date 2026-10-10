@@ -1,0 +1,59 @@
+.pub-footer {
+  background: var(--void);
+  color: rgba(248, 244, 236, 0.78);
+  padding: 3.5rem 0 1.5rem;
+  margin-top: 0;
+  border-top: 1px solid rgba(224, 197, 122, 0.15);
+}
+
+.pub-footer__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 2rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pub-footer__brand {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  color: var(--chalk);
+  margin-bottom: 0.6rem;
+}
+
+.pub-footer__tag {
+  max-width: 28ch;
+  font-size: 0.95rem;
+}
+
+.pub-footer__label {
+  color: var(--gold);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-bottom: 0.65rem;
+}
+
+.pub-footer a,
+.pub-footer p {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+}
+
+.pub-footer a:hover {
+  color: var(--gold);
+}
+
+.pub-footer__bar {
+  padding-top: 1.25rem;
+  font-size: 0.85rem;
+  opacity: 0.65;
+}
+
+@media (max-width: 760px) {
+  .pub-footer__grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: greenfield-api
+    runtime: node
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRES_IN
+        value: 7d
+      - key: CLIENT_URL
+        sync: false
+      - key: RECAPTCHA_SECRET_KEY
+        sync: false
+      - key: PRINCIPAL_EMAIL
+        sync: false
+      - key: PRINCIPAL_PASSWORD
+        sync: false
+      - key: PRINCIPAL_FIRST_NAME
+        value: School
+      - key: PRINCIPAL_LAST_NAME
+        value: Principal

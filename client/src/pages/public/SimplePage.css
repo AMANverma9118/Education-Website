@@ -1,0 +1,46 @@
+.simple-page__hero {
+  padding: calc(var(--nav-h) + 3.5rem) 0 3rem;
+  background:
+    linear-gradient(135deg, rgba(8, 12, 10, 0.88), rgba(19, 64, 54, 0.78)),
+    url('/school-hero.jpg') center 40% / cover;
+  color: var(--chalk);
+  border-bottom: 1px solid rgba(224, 197, 122, 0.18);
+}
+
+.simple-page__hero h1 {
+  font-size: clamp(1.9rem, 3.5vw, 2.75rem);
+  max-width: 16ch;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--gold);
+}
+
+.simple-page__body {
+  padding: 2.75rem 0 3rem;
+  max-width: 720px;
+}
+
+.simple-page__body p {
+  margin-bottom: 1rem;
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 2rem;
+  max-width: 960px !important;
+}
+
+@media (max-width: 760px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}

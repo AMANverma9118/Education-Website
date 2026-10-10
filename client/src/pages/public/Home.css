@@ -1,0 +1,343 @@
+.home {
+  background: var(--luxury-bg);
+  overflow-x: hidden;
+}
+
+/* Hero — always shows the school image (local file) */
+.premium-hero {
+  position: relative;
+  height: 160vh;
+  background: #0a100e;
+}
+
+.premium-hero__sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.premium-hero__media {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  will-change: transform;
+}
+
+.premium-hero__img {
+  position: absolute;
+  inset: -8% 0;
+  width: 100%;
+  max-width: none;
+  height: 116%;
+  object-fit: cover;
+  object-position: center 35%;
+  display: block;
+  will-change: transform;
+  background: #0a100e;
+}
+
+.premium-hero__wash {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(8, 12, 10, 0.88) 0%,
+    rgba(8, 12, 10, 0.35) 45%,
+    rgba(19, 64, 54, 0.25) 100%
+  );
+  pointer-events: none;
+}
+
+.premium-hero__copy {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(2.75rem, 9vh, 5rem);
+  z-index: 3;
+  width: min(640px, calc(100% - 2.5rem));
+  text-align: center;
+  color: var(--chalk);
+  will-change: transform, opacity;
+  pointer-events: none;
+}
+
+.premium-hero__actions {
+  pointer-events: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.premium-hero__eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 0.85rem;
+}
+
+.premium-hero__brand {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6.5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 0.65rem;
+  color: var(--chalk);
+}
+
+.premium-hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.4vw, 1.7rem);
+  font-weight: 550;
+  margin-bottom: 0.7rem;
+  color: rgba(248, 244, 236, 0.92);
+}
+
+.premium-hero__lede {
+  font-size: 1.02rem;
+  max-width: 34ch;
+  margin: 0 auto 1.5rem;
+  color: rgba(248, 244, 236, 0.75);
+}
+
+.premium-hero__ghost {
+  border-color: rgba(224, 197, 122, 0.55) !important;
+  color: var(--chalk) !important;
+}
+
+.premium-hero__ghost:hover {
+  background: var(--gold) !important;
+  color: var(--ink) !important;
+  border-color: var(--gold) !important;
+}
+
+/* Horizontal campus — full viewport, image always present */
+.h-scroll {
+  position: relative;
+  height: 100vh;
+  height: 100dvh;
+  background: var(--luxury-bg);
+  overflow: hidden;
+}
+
+.h-scroll__track {
+  display: flex;
+  height: 100%;
+  width: max-content;
+  will-change: transform;
+}
+
+.h-card {
+  position: relative;
+  flex: 0 0 100vw;
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  background: var(--field-deep);
+}
+
+.h-card__media {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.04);
+}
+
+.h-card__wash {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    rgba(8, 12, 10, 0.82) 0%,
+    rgba(8, 12, 10, 0.28) 50%,
+    rgba(8, 12, 10, 0.5) 100%
+  );
+}
+
+.h-card__copy {
+  position: absolute;
+  left: clamp(1.5rem, 6vw, 5rem);
+  bottom: clamp(2.5rem, 10vh, 5rem);
+  z-index: 2;
+  max-width: 28rem;
+  color: var(--chalk);
+}
+
+.h-card__index {
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 0.65rem;
+}
+
+.h-card__copy h2 {
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  margin-bottom: 0.55rem;
+}
+
+.h-card__copy p {
+  font-size: 1.1rem;
+  color: rgba(248, 244, 236, 0.8);
+  max-width: 28ch;
+}
+
+/* Horizontal roles — photo panels */
+.roles-scroll {
+  position: relative;
+  height: 100vh;
+  height: 100dvh;
+  background:
+    linear-gradient(165deg, rgba(8, 12, 10, 0.72), rgba(16, 36, 30, 0.55)),
+    url('/school-hero.jpg') center / cover;
+  overflow: hidden;
+}
+
+.roles-scroll__intro {
+  position: absolute;
+  top: calc(var(--nav-h) + 1.5rem);
+  left: clamp(1.5rem, 6vw, 5rem);
+  z-index: 3;
+  color: var(--chalk);
+  pointer-events: none;
+  text-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+}
+
+.roles-scroll__eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+}
+
+.roles-scroll__intro h2 {
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+  max-width: 14ch;
+}
+
+.roles-scroll__track {
+  display: flex;
+  align-items: center;
+  gap: 1.35rem;
+  height: 100%;
+  width: max-content;
+  padding: 0 clamp(1.5rem, 6vw, 5rem);
+  padding-top: 5.5rem;
+  will-change: transform;
+}
+
+.role-card {
+  position: relative;
+  flex: 0 0 min(70vw, 480px);
+  width: min(70vw, 480px);
+  height: min(58vh, 460px);
+  overflow: hidden;
+  border: 1px solid rgba(224, 197, 122, 0.28);
+  color: var(--chalk);
+  box-shadow: var(--shadow-lift);
+}
+
+.role-card__media {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.06);
+  transition: transform 0.7s var(--ease);
+}
+
+.role-card:hover .role-card__media {
+  transform: scale(1.12);
+}
+
+.role-card__wash {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(8, 12, 10, 0.92) 0%,
+    rgba(8, 12, 10, 0.35) 48%,
+    rgba(19, 64, 54, 0.2) 100%
+  );
+}
+
+.role-card__copy {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  padding: 2rem 1.75rem 1.85rem;
+}
+
+.role-card__index {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  color: var(--gold);
+  font-weight: 700;
+  margin-bottom: 0.45rem;
+}
+
+.role-card h3 {
+  font-size: clamp(1.8rem, 3vw, 2.45rem);
+  margin-bottom: 0.65rem;
+  color: var(--gold);
+}
+
+.role-card__copy > p:last-child {
+  font-size: 1.02rem;
+  line-height: 1.55;
+  color: rgba(248, 244, 236, 0.86);
+  max-width: 28ch;
+}
+
+.home-strip {
+  background: linear-gradient(135deg, var(--field-deep), #0d2f28 55%, #16382a);
+  color: var(--chalk);
+  padding: clamp(3.5rem, 10vh, 5.5rem) 0;
+  width: 100%;
+}
+
+.home-strip__inner {
+  width: min(1120px, calc(100% - 2.5rem));
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.home-strip h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  max-width: 14ch;
+}
+
+@media (max-width: 760px) {
+  .home-strip__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .role-card {
+    flex-basis: 82vw;
+    width: 82vw;
+    height: min(52vh, 400px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .premium-hero {
+    height: auto;
+  }
+
+  .premium-hero__sticky {
+    position: relative;
+    height: 100vh;
+  }
+}

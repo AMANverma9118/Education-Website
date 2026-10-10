@@ -1,0 +1,81 @@
+.portal--teacher .teacher-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.35rem;
+  border-bottom: 1px solid rgba(19, 64, 54, 0.14);
+}
+
+.teacher-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.teacher-stats .stat {
+  border-color: rgba(19, 64, 54, 0.18);
+  background: linear-gradient(165deg, #f7f9f6, #eef3ef);
+}
+
+.teacher-stats .stat__value {
+  color: var(--field-deep);
+}
+
+.teacher-class-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.9rem;
+}
+
+.teacher-class {
+  padding: 1.1rem 1rem 1rem;
+  border: 1px solid rgba(19, 64, 54, 0.16);
+  background: #fbfaf6;
+  border-left: 2px solid var(--field);
+}
+
+.teacher-class__meta {
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.teacher-class h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.35rem;
+  color: var(--ink);
+}
+
+.teacher-class__count {
+  font-size: 0.88rem;
+  color: var(--field-deep);
+  font-weight: 600;
+  margin-bottom: 0.65rem;
+}
+
+.teacher-class__names {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.teacher-class__names li {
+  padding: 0.15rem 0;
+}
+
+.teacher-class__more {
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .portal--teacher .teacher-hero {
+    align-items: flex-start;
+  }
+}

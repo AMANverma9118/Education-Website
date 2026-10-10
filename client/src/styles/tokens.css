@@ -1,0 +1,33 @@
+:root {
+  /* Luxury academic — midnight, bottle green, champagne */
+  --ink: #0c1210;
+  --ink-soft: #1c2822;
+  --field: #134036;
+  --field-deep: #0b2a24;
+  --clay: #c4a35a;
+  --clay-deep: #9a7a3d;
+  --gold: #e0c57a;
+  --gold-soft: rgba(224, 197, 122, 0.18);
+  --stone: #f3efe6;
+  --stone-dark: #ddd5c5;
+  --chalk: #f8f4ec;
+  --line: rgba(224, 197, 122, 0.22);
+  --muted: #6b736c;
+  --danger: #9b2c2c;
+  --ok: #1f6b45;
+  --warn: #9a6700;
+  --void: #080c0a;
+  --luxury-bg: #0e1613;
+
+  --font-display: 'Literata', Georgia, serif;
+  --font-body: 'Figtree', 'Segoe UI', sans-serif;
+
+  --radius: 4px;
+  --shadow-soft: 0 12px 40px rgba(8, 12, 10, 0.12);
+  --shadow-lift: 0 28px 70px rgba(8, 12, 10, 0.35);
+
+  --nav-h: 80px;
+  --side-w: 248px;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
