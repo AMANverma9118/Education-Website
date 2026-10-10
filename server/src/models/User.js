@@ -25,7 +25,7 @@ const userSchema = new mongoose.Schema(
     // Student fields
     studentId: { type: String, trim: true, sparse: true },
     /** Shared with parents so they can link after the student registers first */
-    familyLinkCode: { type: String, trim: true, uppercase: true, sparse: true },
+    familyLinkCode: { type: String, trim: true, uppercase: true },
     gradeLevel: { type: String, trim: true },
     section: { type: String, trim: true },
     classRef: { type: mongoose.Schema.Types.ObjectId, ref: 'SchoolClass' },
@@ -43,7 +43,6 @@ const userSchema = new mongoose.Schema(
 );
 
 userSchema.index({ role: 1, isApproved: 1 });
-userSchema.index({ email: 1 });
 userSchema.index(
   { familyLinkCode: 1 },
   { unique: true, sparse: true, partialFilterExpression: { role: 'student' } }

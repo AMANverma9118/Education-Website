@@ -51,6 +51,16 @@ async function start() {
   applySecurity(app);
   app.use(morgan(env.isProd ? 'combined' : 'dev'));
 
+  // Root is API-only (frontend lives on Vercel) — avoid a bare 404 for health checks
+  app.get('/', (req, res) => {
+    res.json({
+      success: true,
+      service: 'Greenfield Academy API',
+      health: '/api/health',
+      docs: 'Use the Vercel frontend with VITE_API_URL pointing here.',
+    });
+  });
+
   app.use('/api/auth/login', authLimiter);
   app.use('/api/auth/signup', authLimiter);
   app.use('/api', apiLimiter);
