@@ -63,7 +63,7 @@ Use these after running `npm run seed` in `server/` (and matching principal valu
 
 | Role | Email | Password | Notes |
 |------|--------|----------|--------|
-| **Principal** | `principal@greenfield.edu` | `PrincipalDemo1` | From `PRINCIPAL_*` in `.env` |
+| **Principal** | `aman@gmail.com` | `12345678` | From `PRINCIPAL_*` in `.env` |
 | **Teacher** | `teacher@greenfield.edu` | `TeacherDemo1` | Emma Watson · Math / Biology |
 | **Student** | `student@greenfield.edu` | `StudentDemo1` | Alekh Verma · Grade 8-A |
 | **Parent** | `parent@greenfield.edu` | `ParentDemo1` | Linked to Alekh |
